@@ -1,0 +1,18 @@
+participant Person
+participant Computer
+participant ProgramCounter
+participant Program
+participant JumpEq
+participant Word
+
+Person->Computer:run()
+Computer->ProgramCounter: nextInstruction()
+ProgramCounter-->Computer: int n
+Computer->Program:getInstructionAtIndex(n)
+Program-->Computer: instruction JumpEq
+Computer->JumpEq:execute(memory, ProgramCounter)
+JumpEq->Word: equals(Word w2)
+Word-->JumpEq: boolean true
+JumpEq-ProgramCounter: nextInstruction = 6;
+
+

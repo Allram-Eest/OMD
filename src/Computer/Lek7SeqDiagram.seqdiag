@@ -1,0 +1,11 @@
+participant Person
+participant PayStationStatistics
+participant PayStationLogger
+participant OriginalPayStation
+
+Person->PayStationStatistics: pay("03a5fadd-b8d2", 125.00) 
+PayStationStatistics->PayStationLogger: pay("03a5fadd-b8d2", 125.00)
+PayStationLogger->OriginalPayStation: pay"03a5fadd-b8d2", 125.00()
+OriginalPayStation->OriginalPayStation: System.out.println("03a5fadd-b8d2", 125.00)
+PayStationLogger->PayStationLogger: handlePayment("03a5fadd-b8d2", 125.00)
+PayStationStatistics->PayStationStatistics: handlePayment("03a5fadd-b8d2", 125.00)
