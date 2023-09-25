@@ -1,0 +1,31 @@
+
+participant Person
+participant Computer
+participant ProgramCounter
+participant Program
+participant Add
+participant Operand_Word1
+participant Operand_Word2
+participant Address
+participant Memory
+
+Person->Computer:run()
+Computer->ProgramCounter: nextInstruction()
+ProgramCounter-->Computer: int i
+Computer->Program:getInstructionAtIndex(i)
+Program-->Computer: instsruction Add
+Computer->Add:execute(memory, ProgramCounter)
+Add->Address: getWord(memory)
+Address->Memory: getWordAtIndex(n)
+Memory-->Address: Word: Word1
+Address-->Add: Word: Word1
+Add->Word1: getWord(memory)
+Word1-->Add: Word Word1 
+Add->Word2: getWord(memory)
+Word2-->Add: Word Word2
+Add->Word1: add(Word1, Word2)
+Word1->Word1: value()
+Word1-->Word1: value
+Word1->Word2: value()
+Word2-->Word1: value
+Add->ProgramCounter: nextInstruction++
