@@ -25,5 +25,7 @@ class FindName {
     public String findName(Company company, String deptCode, int empCode) {
         return company.getDepartment(deptCode) //Optional<Department>
                         .flatMap(d -> d.getEmployee(empCode)) //Optional<Employee>
-                        .map(o -> o.getName().orElse("Not Found"));
+                        .map(o -> o.getName())
+                        .orElse("Not found");
+    }
 }
