@@ -1,0 +1,22 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>330</x><y>70</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Strategy
+
+--
+
+--
++op(D)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>300</y><w>210</w><h>70</h></coordinates><panel_attributes>B
+--
+--
++op(D)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>160</y><w>280</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;80;260;80;260;150;260;80;10;80;10;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>300</y><w>210</w><h>70</h></coordinates><panel_attributes>C
+--
+--
++op(D)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>210</y><w>210</w><h>70</h></coordinates><panel_attributes>A
+--
+(Strategy) operator
+--
++dolt(D)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>400</y><w>210</w><h>70</h></coordinates><panel_attributes>D
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>100</y><w>160</w><h>130</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;110;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>270</y><w>30</w><h>150</h></coordinates><panel_attributes>lt=-
+
+</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element></diagram>

@@ -1,0 +1,4 @@
+I - interface substitution principle. Interfacet som är för stort har delats upp i två mindre interface så att 
+klassen A bara implementerar de metoder klassen behöver, och B kan implementera det interface som ger den tillgång till metoden
+op2().
+
